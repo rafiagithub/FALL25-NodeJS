@@ -1,4 +1,4 @@
-# Node.js + Express + MongoDB Project Guide (Detailed for Students)
+# Node.js + Express + MongoDB Project Guide
 
 ##  Overview
 This guide will teach you how to build a **backend REST API** using:  
