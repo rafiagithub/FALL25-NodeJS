@@ -108,7 +108,7 @@ module.exports = connectDB;
 
 ---
 
-## 🌐 Step 6: Create Express Server
+## Step 6: Create Express Server
 Create `src/app.js`
 ```js
 require("dotenv").config();
