@@ -1,6 +1,6 @@
-# 🚀 Node.js + Express + MongoDB Project Guide (Detailed for Students)
+# Node.js + Express + MongoDB Project Guide (Detailed for Students)
 
-## 📌 Overview
+##  Overview
 This guide will teach you how to build a **backend REST API** using:  
 - **Node.js** → JavaScript runtime for backend  
 - **Express** → Web framework for handling HTTP requests  
@@ -14,7 +14,7 @@ By the end, you’ll be able to:
 
 ---
 
-## 🛠️ Prerequisites
+## 🛠 Prerequisites
 Before starting, make sure you have:  
 - [Node.js](https://nodejs.org/) installed (LTS recommended)  
 - [MongoDB](https://www.mongodb.com/try/download/community) installed locally OR an account on [MongoDB Atlas](https://www.mongodb.com/atlas)  
@@ -23,7 +23,7 @@ Before starting, make sure you have:
 
 ---
 
-## 📂 Step 1: Create Project Folder
+##  Step 1: Create Project Folder
 ```bash
 mkdir myapp && cd myapp
 npm init -y
@@ -36,7 +36,7 @@ npm init -y
 
 ---
 
-## 📦 Step 2: Install Dependencies
+## Step 2: Install Dependencies
 ```bash
 npm install express mongoose dotenv cors
 npm install --save-dev nodemon
@@ -51,7 +51,7 @@ npm install --save-dev nodemon
 
 ---
 
-## ⚙ Step 3: Update `package.json` Scripts
+##  Step 3: Update `package.json` Scripts
 Inside `package.json`, add scripts:
 ```json
 "scripts": {
@@ -66,8 +66,8 @@ Inside `package.json`, add scripts:
 
 ---
 
-## 🔑 Step 4: Setup Environment Variables
-Create a file `.env` in project root:
+##  Step 4: Setup Environment Variables
+Create a file `.env` in the project root:
 ```env
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/myapp
@@ -79,7 +79,7 @@ MONGO_URI=mongodb://localhost:27017/myapp
 
 ---
 
-## 🗄 Step 5: Connect to MongoDB
+##  Step 5: Connect to MongoDB
 Create `src/config/db.js`
 ```js
 const mongoose = require("mongoose");
@@ -145,7 +145,7 @@ app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
 
 ---
 
-## 👤 Step 7: Create a User Model
+##  Step 7: Create a User Model
 Create `src/models/User.js`
 ```js
 const mongoose = require("mongoose");
@@ -167,7 +167,7 @@ module.exports = mongoose.model("User", userSchema);
 
 ---
 
-## 🎯 Step 8: Create Controller Functions
+## Step 8: Create Controller Functions
 Create `src/controllers/userController.js`
 ```js
 const User = require("../models/User");
@@ -201,7 +201,7 @@ exports.createUser = async (req, res) => {
 
 ---
 
-## 🛤 Step 9: Add Routes
+##  Step 9: Add Routes
 Create `src/routes/userRoutes.js`
 ```js
 const express = require("express");
@@ -223,7 +223,7 @@ module.exports = router;
 
 ---
 
-## 🧪 Step 10: Test with Postman
+##  Step 10: Test with Postman
 1. Start server:
    ```bash
    npm run dev
